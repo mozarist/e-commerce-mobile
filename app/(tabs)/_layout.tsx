@@ -5,6 +5,7 @@ import { HapticTab } from '@/components/haptic-tab';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -24,10 +25,24 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="feed"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Feed',
+          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="smart-display" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="notifications"
+        options={{
+          title: 'Notifications',
+          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="notifications" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="person" color={color} />,
         }}
       />
     </Tabs>
