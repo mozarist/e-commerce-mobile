@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "fetch-api",
-    "slug": "fetch-api",
+    "name": "e-commerce",
+    "slug": "e-commerce",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "fetchapi",
+    "scheme": "ecommerce",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -36,7 +36,7 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#EE4D2D"
           }
         }
       ]
